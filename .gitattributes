@@ -1,0 +1,4 @@
+*.cbp eol=lf
+*.cpp text
+*.h text
+*.lua text

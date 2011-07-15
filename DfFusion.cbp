@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="DfFusion" />
+		<Option pch_mode="2" />
+		<Option compiler="tdm_gcc_compiler" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\DfFusion" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="tdm_gcc_compiler" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\DfFusion" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="tdm_gcc_compiler" />
+				<Compiler>
+					<Add option="-march=i586" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++0x" />
+			<Add option="-Wall" />
+			<Add option="-fexceptions -m32" />
+			<Add directory="include" />
+			<Add directory="C:\Programing\lua5_1_4_32\include" />
+			<Add directory="C:\Programing\boost_1_44_0" />
+		</Compiler>
+		<Linker>
+			<Add option="-m32 -static" />
+			<Add library="libs\libboost_filesystem-mgw45-mt-1_44.a" />
+			<Add library="libs\libboost_system-mgw45-mt-1_44.a" />
+			<Add library="mswsock" />
+			<Add library="ws2_32" />
+			<Add library="liblua.a" />
+			<Add directory="libs" />
+			<Add directory="$(#lua.lib)" />
+		</Linker>
+		<Unit filename="include\DF_31.h" />
+		<Unit filename="include\DF_31_structs.h" />
+		<Unit filename="include\DF_COMMON.h" />
+		<Unit filename="include\DF_common_31.h" />
+		<Unit filename="include\Debuger.h" />
+		<Unit filename="include\Function.h" />
+		<Unit filename="include\OutFile.h" />
+		<Unit filename="include\PlugManager.h" />
+		<Unit filename="include\bit.h" />
+		<Unit filename="include\clClient.h" />
+		<Unit filename="include\clServer.h" />
+		<Unit filename="include\common_lua.h" />
+		<Unit filename="include\debuger_lua.h" />
+		<Unit filename="include\engine_lua.h" />
+		<Unit filename="include\filesystem_lua.h" />
+		<Unit filename="include\function_lua.h" />
+		<Unit filename="include\hexsearch.h" />
+		<Unit filename="include\luastuff.h" />
+		<Unit filename="include\luaxx\luaxx.hpp" />
+		<Unit filename="include\luna.h" />
+		<Unit filename="include\lune.h" />
+		<Unit filename="include\mytypes.h" />
+		<Unit filename="include\network.h" />
+		<Unit filename="include\network_msg.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src\DF_31.cpp" />
+		<Unit filename="src\DF_31_structs.cpp" />
+		<Unit filename="src\DF_COMMON.cpp" />
+		<Unit filename="src\Debuger.cpp" />
+		<Unit filename="src\Function.cpp" />
+		<Unit filename="src\OutFile.cpp" />
+		<Unit filename="src\PlugManager.cpp" />
+		<Unit filename="src\bit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\clClient.cpp" />
+		<Unit filename="src\clServer.cpp" />
+		<Unit filename="src\common_lua.cpp" />
+		<Unit filename="src\debuger_lua.cpp" />
+		<Unit filename="src\engine_lua.cpp" />
+		<Unit filename="src\filesystem_lua.cpp" />
+		<Unit filename="src\function_lua.cpp" />
+		<Unit filename="src\hexsearch.cpp" />
+		<Unit filename="src\luastuff.cpp" />
+		<Unit filename="src\luaxx\luaxx.cc" />
+		<Unit filename="src\luna.cpp" />
+		<Unit filename="src\lune.cpp" />
+		<Unit filename="src\network.cpp" />
+		<Unit filename="src\network_msg.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

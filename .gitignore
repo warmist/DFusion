@@ -2,7 +2,7 @@
 *.layout
 *.zip
 *.7z
-./libs
-./hacking
-./obj
-./bin
+libs/
+hacking/
+obj/
+bin/
