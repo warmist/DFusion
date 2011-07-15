@@ -9,6 +9,7 @@ Index:
 	2.4 Network
 3.  Version History
 4.  Stuff TODO
+5.  Links
 
 1. User Section
 This is a plugin managment system that allows to patch DF on the fly giving it more functionality. Usage:
@@ -190,3 +191,6 @@ When program starts it runs init.lua in main folder. There you can place all com
 	* better map editing API
 	* look into site data struct. That could be a very usefull thing.
 	* function position offsets.lua 
+5. Links
+	* Dwarf fortress forum thread: http://www.bay12forums.com/smf/index.php?topic=69682
+	* GitHub repo: https://github.com/warmist/DFusion
