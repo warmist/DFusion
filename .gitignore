@@ -1,0 +1,8 @@
+*.depend
+*.layout
+*.zip
+*.7z
+./libs
+./hacking
+./obj
+./bin
